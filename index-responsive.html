@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="responsive-stylesheets.css">
+    </head>
+    <body>
+        <header class="background-image-responsive">
+
+        </header>
+
+        <main>
+            <section>
+                <h1>Responsive Images</h1>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, qui nesciunt corrupti odit dolorum autem modi inventore! Illum ea vitae nemo, tempora dignissimos quod a, delectus, neque ipsam eius voluptatibus?</p>
+
+                <picture>
+                    <source media="(max-width: 318px)" srcset="./images/seaside02/art-seaside-310.jpg" >
+                    <source media="(max-width: 500px)" srcset="./images/seaside02/art-seaside-490.jpg">
+                    <source media="(max-width: 640px)" srcset="./images/seaside02/art-seaside-630.jpg">
+                    <source media="(max-width: 800px)" srcset="./images/seaside02/art-seaside-790.jpg">
+                    <source media="(max-width: 1024px)" srcset="./images/seaside02/art-seaside-1015.jpg">
+                    <source media="(min-width: 1025px)" srcset="./images/seaside02/art-seaside-1599.jpg">
+                    <img src="./images/seaside02/art-seaside-1599.jpg" alt="seaside">
+                </picture>
+
+                <p>Suspendisse potenti. Ut in luctus eros. Mauris pulvinar vehicula aliquet. Etiam imperdiet eleifend luctus. Duis ut justo nec eros ornare consectetur. Vestibulum convallis condimentum varius. Maecenas rutrum porta varius. Phasellus volutpat sem id sagittis luctus. Morbi vitae quam vitae nisi iaculis dignissim.</p>
+                <hr/>
+                
+                <h2>Fixed sizes, different resolutions:</h2>
+
+                <img srcset=
+                "./images/seaside01/seaside-318.jpg 318w,
+                 ./images/seaside01/seaside-500.jpg 500w, 
+                 ./images/seaside01/seaside-640.jpg 640w, 
+                 ./images/seaside01/seaside-800.jpg 800w, 
+                 ./images/seaside01/seaside-1024.jpg 1024w, 
+                 ./images/seaside01/seaside-1599.jpg 1599w"
+                     sizes=
+                     "(max-width: 318px) 318px,
+                      (max-width: 500px) 500px, 
+                      (max-width: 640px) 640px, 
+                      (max-width: 800px) 800px, 
+                      (max-width: 1024px) 1024, 
+                      1599px" 
+                     src="/images/seaside01/seaside-800.jpg" alt="seaside">
+
+                <p>This image originally by <a href="https://flickr.com/photos/dlgarrett/34063867922/">malone545</a>.</p>
+        
+                <p>This is a responsive image that displays different resolutions by changing the screen dimensions, but in small sizes due to
+                    The problem of Art Direction is that its content is not seen quite well.</p>
+            </section>
+        </main>
+    
+    </body>
+</html>
